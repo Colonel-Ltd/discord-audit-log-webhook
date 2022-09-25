@@ -1,5 +1,5 @@
 {
-  "name": "starter-discord-bot",
+  "name": "discord-audit-log-webhook",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,5 +28,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  },
+  }
 }
