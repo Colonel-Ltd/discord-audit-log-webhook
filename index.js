@@ -22,7 +22,7 @@ require("./logger")(client);
 //logger(client)
 
 app.get('/', async (req,res) =>{
-  return res.send('Follow documentation ')
+  return res.send('Follow docu..mentation ')
 })
 
 
