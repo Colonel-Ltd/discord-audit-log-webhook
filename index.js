@@ -22,7 +22,7 @@ client.on("ready", ()=>{
 app.get('/', async (req,res) =>{
   return res.send('Follow docu..mentation ')
 })
-
+console.log("00000000000000000000000")
 client.login(TOKEN);
 require("./logger")(client);
 app.listen(8999, () => {
