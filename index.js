@@ -1,6 +1,9 @@
 require('dotenv').config()
 const TOKEN = process.env.TOKEN
 const Discord = require("discord.js");
+const express = require('express');
+
+const app = express();
 const colors = require("colors")
 const client = new Discord.Client({
   presence: {
@@ -23,3 +26,12 @@ client.on("ready", ()=>{
 require("./logger")(client);
 //const logger = require("./logger");
 //logger(client)
+
+app.get('/', async (req,res) =>{
+  return res.send('Follow documentation ')
+})
+
+
+app.listen(8999, () => {
+
+})
