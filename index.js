@@ -1,3 +1,5 @@
+require('dotenv').config()
+const TOKEN = process.env.TOKEN
 const Discord = require("discord.js");
 const colors = require("colors")
 const client = new Discord.Client({
@@ -12,7 +14,7 @@ const client = new Discord.Client({
 });
 client.config = require("./config.json");
 
-client.login(process.env.TOKEN);
+client.login(TOKEN);
 
 client.on("ready", ()=>{
   console.log(`${client.user.tag} is now Online! Prefix: ${client.config.prefix}`.bgGreen);
