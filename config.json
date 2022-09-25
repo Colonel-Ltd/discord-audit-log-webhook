@@ -1,5 +1,5 @@
 {
-   "token": "MTAyMzY2Mzc5MDczNjI4MTcwMA.GYnbcF.b8M3z_87wQaq7Tv7ufb_UscCmcA0T2zOq_EnlI",
+   "token": process.env.TOKEN,
    "prefix": "$",
    "loggerChannelID": "1023548386521124934",
    "webhook": {
