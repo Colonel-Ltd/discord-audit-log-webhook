@@ -5,15 +5,9 @@ const express = require('express');
 
 const app = express();
 const colors = require("colors")
-const client = new Discord.Client({
-  presence: {
-    status: "dnd",
-    activity: {
-      name: "Logger Tutorial",
-      type: "STREAMING",
-      url: "https://twitch.tv/#"
-    }
-  }
+const client = new Discord.Client();
+client.on('ready', () => {
+  console.log(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`);
 });
 client.config = require("./config.json");
 
